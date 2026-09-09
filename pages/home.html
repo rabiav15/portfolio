@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabia Varol Personal Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome (İkonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* ana giris body ayarı  */
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        /*footer ayarı */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">RABİA VAROL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-ms-auto navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT-->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section text-center">
+            <div class="container">
+<!-- <img src="profil-foton.jpg" alt="Profil Fotoğrafı"
+  class="rounded-circle mb-4" width="150" height="150" style="object-fit: cover; 
+  border: 4px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> -->
+                <h1 class="display-4 fw-bold">Hello, It's RABİA VAROL</h1>
+                <p class="lead mt-3">
+                    I am a engineering student who loves bringing hardware and software together. <br>
+                    I create projects in the fields of IoT, deep learning, database architectures and full-stack development.
+                </p>
+                <div class="mt-4">
+                    <a href="#projects" class="btn btn-primary btn-lg me-2">Explore My Projects</a>
+                    <a href="#contact" class="btn btn-outline-dark btn-lg">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="mb-3">
+                <!-- Sosyal Medya İkonları -->
+                <a href="#" class="text-white me-3 fs-4"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white me-3 fs-4"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2026 [Rabia Varol]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS ve Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

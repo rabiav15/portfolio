@@ -44,7 +44,7 @@
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#knowbetter">More About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -263,9 +263,267 @@
         </div>
     </div>
 </section>
+<style>
+    /* Eğitim kartları hover animasyonu */
+.experience-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #077c0f !important; /* Sol tarafa şık bir mavi çizgi */
+}
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+</style>
+
+<!-- PROJECTS -->
+<!-- PROJECTS SECTION (Projeler) -->
+<section id="projects" class="py-5 bg-white">
+    <div class="container">
+        <!-- Bölüm Başlığı -->
+        <h2 class="text-center mb-5 fw-bold"><i class="fas fa-code text-primary me-2"></i>PROJECTS</h2>
+
+        <!-- 2x2 Izgara (Grid) Yapısı -->
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Proje 1 -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm project-card overflow-hidden">
+                    <!-- Proje Görseli (Buraya kendi görsel linklerini ekleyebilirsin) -->
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Smart Agriculture" style="height: 300px; object-fit: cover;">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
+                        <h5 class="card-title fw-bold mb-0">Smart Agriculture Prototype</h5>
+                        <!-- Büyüteç Butonu (Modal 1'i açar) -->
+                        <button class="btn btn-primary rounded-circle shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProject1" title="Detayları Gör">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proje 2 -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm project-card overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Database Benchmark" style="height: 300px; object-fit: cover;">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
+                        <h5 class="card-title fw-bold mb-0">DB Performance Benchmarking</h5>
+                        <button class="btn btn-primary rounded-circle shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProject2">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proje 3 -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm project-card overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="POSIX Systems" style="height: 300px; object-fit: cover;">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
+                        <h5 class="card-title fw-bold mb-0">POSIX Systems Programming</h5>
+                        <button class="btn btn-primary rounded-circle shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProject3">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proje 4 -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm project-card overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Network Config" style="height: 300px; object-fit: cover;">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
+                        <h5 class="card-title fw-bold mb-0">Cisco Network Configuration</h5>
+                        <button class="btn btn-primary rounded-circle shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProject4">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Proje 5 -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm project-card overflow-hidden">
+                    <!-- Proje Görseli (Buraya kendi görsel linklerini ekleyebilirsin) -->
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Smart Agriculture" style="height: 300px; object-fit: cover;">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
+                        <h5 class="card-title fw-bold mb-0">Smart Agriculture Prototype</h5>
+                        <!-- Büyüteç Butonu (Modal 1'i açar) -->
+                        <button class="btn btn-primary rounded-circle shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProject5" title="Detayları Gör">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+              <!-- Proje 6 -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm project-card overflow-hidden">
+                    <!-- Proje Görseli (Buraya kendi görsel linklerini ekleyebilirsin) -->
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Smart Agriculture" style="height: 300px; object-fit: cover;">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
+                        <h5 class="card-title fw-bold mb-0">Smart Agriculture Prototype</h5>
+                        <!-- Büyüteç Butonu (Modal 1'i açar) -->
+                        <button class="btn btn-primary rounded-circle shadow-sm" data-bs-toggle="modal" data-bs-target="#modalProject6" title="Detayları Gör">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<style> 
+.project-card img {
+    transition: transform 0.4s ease;
+}
+.project-card:hover img {
+    transform: scale(1.05); /* Üzerine gelince resim hafifçe büyür */
+}
+.project-card {
+    transition: box-shadow 0.3s ease;
+}
+.project-card:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+}
+</style>
 
 
 
+<!-- KNOW BETTER-->
+
+
+<!-- CONTACT-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========================================== -->
+
+<!-- Modal 1: Smart Agriculture -->
+<div class="modal fade" id="modalProject1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold"><i class="fas fa-leaf me-2"></i>Smart Agriculture Prototype</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <h6 class="fw-bold text-dark border-bottom pb-2">Projenin Amacı</h6>
+                <p>Tarımsal verimliliği artırmak için bitki hastalıklarını tespit eden ve çevresel faktörleri anlık olarak izleyen uçtan uca bir sistem geliştirmek.</p>
+                
+                <h6 class="fw-bold text-dark border-bottom pb-2 mt-4">Konsept ve Teknolojiler</h6>
+                <p>ESP32-CAM modülü ile alınan ortam verileri (DHT11 vb.) ve bitki görüntüleri bir sunucuya aktarıldı. Görüntüler üzerinden MobileNetV2 (Transfer Learning) kullanılarak 38 farklı bitki hastalığı sınıflandırıldı. Veriler Apache Spark ile işlenerek Flutter tabanlı bir mobil asistanda görselleştirildi.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2: DB Benchmark -->
+<div class="modal fade" id="modalProject2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold"><i class="fas fa-database me-2"></i>DB Performance Benchmarking</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <h6 class="fw-bold text-dark border-bottom pb-2">Projenin Amacı</h6>
+                <p>İlişkisel (MySQL) ve NoSQL (MongoDB) veritabanı yönetim sistemlerinin farklı sorgu tiplerindeki performans sınırlarını ve tepki sürelerini analiz etmek.</p>
+                
+                <h6 class="fw-bold text-dark border-bottom pb-2 mt-4">Konsept ve Teknolojiler</h6>
+                <p>Docker container'ları üzerinde koşan MongoDB ve MySQL sunucularına, Python ile yazılmış test scriptleri gönderildi. CRUD (Create, Read, Update, Delete) operasyonları ve karmaşık Join/Aggregation işlemleri büyük veri setleri üzerinde (örn. uçuş verileri) test edilerek yanıt süreleri milisaniye cinsinden ölçüldü.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3: POSIX -->
+<div class="modal fade" id="modalProject3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold"><i class="fas fa-terminal me-2"></i>POSIX Systems Programming</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <h6 class="fw-bold text-dark border-bottom pb-2">Projenin Amacı</h6>
+                <p>İşletim sistemleri seviyesinde süreç (process) yönetimi, bellek tahsisi ve sinyalleşme mantığını kavramak.</p>
+                
+                <h6 class="fw-bold text-dark border-bottom pb-2 mt-4">Konsept ve Teknolojiler</h6>
+                <p>Linux ortamında C programlama dili kullanılarak çoklu süreç yönetimi gerçekleştirildi. <code>fork()</code>, <code>signal()</code>, <code>kill()</code> sistem çağrıları kullanılarak süreçler arası iletişim kuruldu ve <code>malloc</code> ile dinamik bellek yönetimi yapılarak karmaşık matris hesaplamaları tamamlandı.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4: Network -->
+<div class="modal fade" id="modalProject4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold"><i class="fas fa-network-wired me-2"></i>Cisco Network Configuration</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <h6 class="fw-bold text-dark border-bottom pb-2">Projenin Amacı</h6>
+                <p>Gelişmiş ağ topolojileri tasarlamak ve farklı yönlendirme protokollerinin veri iletimindeki rollerini simüle etmek.</p>
+                
+                <h6 class="fw-bold text-dark border-bottom pb-2 mt-4">Konsept ve Teknolojiler</h6>
+                <p>IP alt ağlara bölme (subnetting), VLAN trunking işlemleri ve OSPF ile RIP gibi yönlendirme (routing) protokolleri Cisco cihazlar üzerinde CLI (Komut Satırı Arayüzü) kullanılarak yapılandırıldı. Ağ topolojisindeki cihazların birbirleriyle haberleşmesi doğrulandı.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 5: Network -->
+<div class="modal fade" id="modalProject5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold"><i class="fas fa-network-wired me-2"></i>Cisco Network Configuration</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <h6 class="fw-bold text-dark border-bottom pb-2">Projenin Amacı</h6>
+                <p>Gelişmiş ağ topolojileri tasarlamak ve farklı yönlendirme protokollerinin veri iletimindeki rollerini simüle etmek.</p>
+                
+                <h6 class="fw-bold text-dark border-bottom pb-2 mt-4">Konsept ve Teknolojiler</h6>
+                <p>IP alt ağlara bölme (subnetting), VLAN trunking işlemleri ve OSPF ile RIP gibi yönlendirme (routing) protokolleri Cisco cihazlar üzerinde CLI (Komut Satırı Arayüzü) kullanılarak yapılandırıldı. Ağ topolojisindeki cihazların birbirleriyle haberleşmesi doğrulandı.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 6: Network -->
+<div class="modal fade" id="modalProject6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold"><i class="fas fa-network-wired me-2"></i>Cisco Network Configuration</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <h6 class="fw-bold text-dark border-bottom pb-2">Projenin Amacı</h6>
+                <p>Gelişmiş ağ topolojileri tasarlamak ve farklı yönlendirme protokollerinin veri iletimindeki rollerini simüle etmek.</p>
+                
+                <h6 class="fw-bold text-dark border-bottom pb-2 mt-4">Konsept ve Teknolojiler</h6>
+                <p>IP alt ağlara bölme (subnetting), VLAN trunking işlemleri ve OSPF ile RIP gibi yönlendirme (routing) protokolleri Cisco cihazlar üzerinde CLI (Komut Satırı Arayüzü) kullanılarak yapılandırıldı. Ağ topolojisindeki cihazların birbirleriyle haberleşmesi doğrulandı.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -284,6 +542,7 @@
             <p class="mb-0">&copy; 2026 [Rabia Varol]. All Rights Reserved.</p>
         </div>
     </footer>
+
 
     <!-- Bootstrap 5 JS ve Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

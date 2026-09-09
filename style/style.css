@@ -1,0 +1,166 @@
+/* --- VARIABLES & FOUNDATION --- */
+:root {
+  --primary-color: #a70586; /* Indigo */
+  --secondary-color: #782253; /* Dark Gray */
+  --bg-color: #f0aef1; /* Off-white */
+  --text-color: #120d11; /* Medium Gray */
+  --white: #FFFFFF;
+  
+}
+
+/* Reset & Prevent Overlap */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+/* Heading Font Size vs Body Font Size */
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; }
+p { font-size: 1.1rem; }
+
+
+/* --- NAVIGATION --- */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.hero h1 {
+  color: var(--white); /* Override default dark color for hero */
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  color: #D1D5DB;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f12c96;
+}
+
+/* --- CONTENT SECTIONS --- */
+.features, .about {
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  /* CSS Grid magic for responsive columns: */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.about {
+  background-color: var(--white);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- FOOTER --- */
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .hero {
+    padding: 5rem 1rem;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+}

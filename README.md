@@ -4,7 +4,7 @@ Modern, tamamen responsive ve Bootstrap 5 tabanlı kişisel portföy web sitemin
 Bu proje; eğitim geçmişimi, donanım/yazılım deneyimlerimi ve geliştirdiğim akademik/bireysel projeleri estetik bir biçimde sergilemek amacıyla tek sayfa (Single Page) mimarisinde tasarlanmıştır.
 
 ## 🚀 Canlı Demo
-Projeyi canlı olarak incelemek için tıklayın: [Portföy Web Sitem](https://rabiav15.github.io/portfolyo)
+Projeyi canlı olarak incelemek için tıklayın: [Portföy Web Sitem](https://rabiav15.github.io/portfolio)
 
 ## ✨ Öne Çıkan Özellikler
 * **Responsive Tasarım:** Tüm cihazlarda (mobil, tablet, masaüstü) kusursuz çalışan Bootstrap grid sistemi.

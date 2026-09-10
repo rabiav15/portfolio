@@ -564,7 +564,7 @@
             <div class="col-lg-6">
                 <div class="card border-0 shadow p-4 rounded-4">
                     
-                    <form action="https://formsubmit.co/80c89bbf3ae556cedd4c079c3c56dcbf" method="POST">
+                    <form action="https://api.web3forms.com/submit"method="POST">
                         
                         <!-- İsim Soyisim -->
                         <div class="mb-3">
@@ -599,11 +599,16 @@
                             <textarea class="form-control bg-light" name="message" id="message" rows="4" placeholder="Mesajınızı buraya yazabilirsiniz..." required></textarea>
                         </div>
 
-                        <!-- FormSubmit Ayarları (Gizli) -->
-                        <input type="hidden" name="_captcha" value="false"> <!-- Can sıkıcı robot doğrulamasını kapatır -->
-                        <input type="hidden" name="_template" value="table"> <!-- Mailin sana tablo formatında şık gelmesini sağlar -->
-                        
-                        <input type="hidden" name="_next" value="https://rabiav15.github.io/portfolio/#home"> <!-- Form gönderildikten sonra yönlendirilecek sayfa -->
+                       <!-- 1. Adımda mailine gelen Access Key'i buraya yapıştır -->
+    <input type="hidden" name="access_key" value="170be192-aa2a-4994-842c-6dee17db211e">
+
+    <!-- Form gönderilince kullanıcıyı otomatik ana sayfaya döndürecek link (Kendi GitHub Pages linkini yaz) -->
+    <input type="hidden" name="redirect" value="https://rabiav15.github.io/portfolio/#home">
+
+    <!-- Spam robotlarını engellemek için -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                       
+    
                         <!-- Gönder Butonu -->
                         <button type="submit" class="btn btn-primary w-100 py-2 fw-bold text-uppercase shadow-sm" style="letter-spacing: 1px;">
                             <i class="fas fa-paper-plane me-2"></i> Mesajı Gönder
@@ -616,19 +621,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- ========================================== -->

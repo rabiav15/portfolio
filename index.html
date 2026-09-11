@@ -16,7 +16,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #eef1f5 0%, #c3cfe2 100%);
         }
         /*footer ayarı */
         body {
@@ -37,9 +36,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">RABİA VAROL</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+    </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-ms-auto navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
@@ -49,34 +48,44 @@
                     <li class="nav-item"><a class="nav-link" href="#knowbetter">Know Better</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+    <button id="darkModeToggle" class="btn btn-outline-light ms-lg-3 mt-3 mt-lg-0 rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                    <i id="themeIcon" class="fas fa-moon"></i>
+    </button>
             </div>
-        </div>
+
+            </div>
+        
     </nav>
 
     <!-- MAIN CONTENT-->
+    
     <main>
-        <!-- HERO SECTION -->
-        <section id="home" class="hero-section text-center">
+
+<!-- HERO -->       
+<section id="home" class="hero-section text-center bg-body-tertiary">
             <div class="container">
-<img src="images/profil.jpg" alt="Profil Fotoğrafı"
-  class="rounded-circle mb-4" width="150" height="150" style="object-fit: cover; 
-  border: 4px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                
+                <img src="images/profil.jpg" alt="Profil Fotoğrafı"
+                     class="rounded-circle mb-4 shadow" width="150" height="150" 
+                     style="object-fit: cover; border: 4px solid var(--bs-body-bg);">
+                
                 <h1 class="display-4 fw-bold">Hello, It's RABİA VAROL</h1>
                 <p class="lead mt-3">
-                    I am a engineering student who loves bringing hardware and software together. <br>
+                    I am an engineering student who loves bringing hardware and software together. <br>
                     I create projects in the fields of IoT, deep learning, database architectures and full-stack development.
                 </p>
                 <div class="mt-4">
-                    <a href="#projects" class="btn btn-outline-dark btn-lg me-2">Explore My Projects</a>
-                    <a href="#contact" class="btn btn-outline-dark btn-lg">Get in Touch</a>
+                
+        <a href="#projects" class="btn btn-primary btn-lg me-2">Explore My Projects</a>
+        <a href="#contact" class="btn btn-outline-secondary btn-lg">Get in Touch</a>
                 </div>
             </div>
-        </section>
+</section>
+    
     </main>
 
-
-    <!-- EDUCATION -->
-<section id="education" class="py-5 bg-white">
+<!-- EDUCATION -->
+<section id="education" class="py-5 bg-body">
     <div class="container">
         
         <h2 class="text-center mb-5 fw-bold"><i class="fas fa-graduation-cap text-primary me-2"></i>EDUCATION BACKGROUND</h2>
@@ -90,22 +99,25 @@
                         <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-3">
                             <div>
                                 <h4 class="card-title fw-bold mb-1">SAKARYA UNIVERSITY</h4>
-                                <h6 class="text-muted mb-0">BACHELOR DEGREE</h6>
+                                <!-- text-muted yerine text-body-secondary kullanıldı -->
+                                <h6 class="text-body-secondary mb-0">BACHELOR DEGREE</h6>
                             </div>
                             <div class="text-md-end mt-2 mt-md-0">
                                 <span class="badge bg-primary rounded-pill px-3 py-2">SEPTEMBER 2024 - JUNE 2026</span>
                             </div>
                         </div>
-                        <p class="card-text text-secondary">
+                        <!-- text-secondary yerine text-body-secondary kullanıldı -->
+                        <p class="card-text text-body-secondary">
                             Smart agriculture automation, embedded systems and deep learning on the graduation project and research studies were conducted. Network protocols, compiler design and operating systems level (POSIX) programming topics were studied academically.
                         </p>
                         <!-- QUALIFICATIONS -->
                         <div class="mt-3">
-                             <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>3.20/4.0 GPA</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>IoT & ESP32</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Python,C++,C#</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Data Structures & Algorithms</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Big Data Technologies</span>
+                            <!-- text-dark yerine text-body kullanıldı (Karanlık modda otomatik beyaz olur) -->
+                             <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>3.20/4.0 GPA</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>IoT & ESP32</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Python,C++,C#</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Data Structures & Algorithms</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Big Data Technologies</span>
                         </div>
                     </div>
                 </div>
@@ -116,21 +128,21 @@
                         <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-3">
                             <div>
                                 <h4 class="card-title fw-bold mb-1">MALTEPE UNIVERSITY</h4>
-                                <h6 class="text-muted mb-0">BACHELOR DEGREE</h6>
+                                <h6 class="text-body-secondary mb-0">BACHELOR DEGREE</h6>
                             </div>
                             <div class="text-md-end mt-2 mt-md-0">
                                 <span class="badge bg-primary rounded-pill px-3 py-2">SEPTEMBER 2021 - JUNE 2024</span>
                             </div>
                         </div>
-                        <p class="card-text text-secondary">
+                        <p class="card-text text-body-secondary">
                             Database management systems, performance testing and mobile application architectures were focused on. NoSQL and relational database comparisons were made.
                         </p>
                         <!-- QUALIFICATIONS -->
                         <div class="mt-3">
-                             <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>3.14/4.0 GPA</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>C Programming</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Object-Oriented Programming</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Algorithm Design</span>
+                             <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>3.14/4.0 GPA</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>C Programming</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Object-Oriented Programming</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Algorithm Design</span>
                         </div>
                     </div>
                 </div>
@@ -141,20 +153,20 @@
                         <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-3">
                             <div>
                                 <h4 class="card-title fw-bold mb-1">NECMETTİN ERBAKAN SCIENCE HIGH SCHOOL</h4>
-                                <h6 class="text-muted mb-0">HIGH SCHOOL</h6>
+                                <h6 class="text-body-secondary mb-0">HIGH SCHOOL</h6>
                             </div>
                             <div class="text-md-end mt-2 mt-md-0">
                                 <span class="badge bg-primary rounded-pill px-3 py-2">SEPTEMBER 2017 - JUNE 2021</span>
                             </div>
                         </div>
-                        <p class="card-text text-secondary">
+                        <p class="card-text text-body-secondary">
                             Analytical thinking skills and the fundamentals of algorithm design were acquired in high school.
                         </p>
                         <!-- QUALIFICATIONS -->
                         <div class="mt-3">
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Analytical Thinking</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Algorithms</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Problem Solving</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Analytical Thinking</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Algorithms</span>
+                            <span class="badge bg-body-tertiary text-body border border-secondary-subtle me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-primary me-1"></i>Problem Solving</span>
                         </div>
                     </div>
                 </div>
@@ -177,8 +189,7 @@
 </style>
 
 <!--EXPERIENCE-->
-
-<section id="experience" class="py-5" style="background-color: #f8f9fa;">
+<section id="experience" class="py-5" bg-body-tertiary>
     <div class="container">
 
         <h2 class="text-center mb-5 fw-bold"><i class="fas fa-briefcase text-success me-2"></i>EXPERIENCES</h2>
@@ -192,21 +203,21 @@
                         <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-3">
                             <div>
                                 <h4 class="card-title fw-bold mb-1">HARDWARE INTERN</h4>
-                                <h6 class="text-muted mb-0">ENGINEERING DEANSHIP INFORMATION TECHNOLOGY OFFICE</h6>
+                                <h6 class="text-body-secondary mb-0">ENGINEERING DEANSHIP INFORMATION TECHNOLOGY OFFICE</h6>
                             </div>
                             <div class="text-md-end mt-2 mt-md-0">
                                 <span class="badge bg-success rounded-pill px-3 py-2">SEPTEMBER 2026 - OCTOBER 2026</span>
                             </div>
                         </div>
-                        <p class="card-text text-secondary">
+                        <p class="card-text text-body-secondary">
                              Hardware internship encompassing the maintenance of the faculty's IT infrastructure, identification and resolution of hardware issues, and support for the physical installation and system configuration of network devices (switches, routers).
                         </p>
                         <!-- QUALIFICATIONS -->
                         <div class="mt-3">
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Hardware Maintenance</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Network Infrastructure</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>System Administration</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Cisco IOS</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Hardware Maintenance</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Network Infrastructure</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>System Administration</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Cisco IOS</span>
                         </div>
                     </div>
                 </div>
@@ -217,20 +228,20 @@
                         <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-3">
                             <div>
                                 <h4 class="card-title fw-bold mb-1">SOFTWARE ENGINEERING INTERN</h4>
-                                <h6 class="text-muted mb-0">BMC AUTOMATION</h6>
+                                <h6 class="text-body-secondary mb-0">BMC AUTOMATION</h6>
                             </div>
                             <div class="text-md-end mt-2 mt-md-0">
                                 <span class="badge bg-success rounded-pill px-3 py-2">JUNE 2025 - AUGUST 2025</span>
                             </div>
                         </div>
-                        <p class="card-text text-secondary">
+                        <p class="card-text text-body-secondary">
                          An opportunity was provided to develop projects using ASP.NET. The task involved creating small-scale projects using Blazor technology, following the steps for building applications based on a layered architecture.                        </p>
                         <!-- QUALIFICATIONS -->
                         <div class="mt-3">
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>ASP.NET</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Database Management</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Blazor</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Layered Architecture</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>ASP.NET</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Database Management</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Blazor</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Layered Architecture</span>
                         </div>
                     </div>
                 </div>
@@ -241,20 +252,20 @@
                         <div class="d-flex justify-content-between align-items-md-center flex-column flex-md-row mb-3">
                             <div>
                                 <h4 class="card-title fw-bold mb-1">VOLUNTEER INTERNSHIP</h4>
-                                <h6 class="text-muted mb-0">SOCIAL OFFICE - TNC GROUP</h6>
+                                <h6 class="text-body-secondary mb-0">SOCIAL OFFICE - TNC GROUP</h6>
                             </div>
                             <div class="text-md-end mt-2 mt-md-0">
                                 <span class="badge bg-success rounded-pill px-3 py-2">OCTOBER 2025 - DECEMBER 2025</span>
                             </div>
                         </div>
-                        <p class="card-text text-secondary">
+                        <p class="card-text text-body-secondary">
                         During a voluntary internship undertaken to enhance their versatility, they participated in events focused on various technologies and submitted a portfolio.                        </p>
                         <!-- QUALIFICATIONS -->
                         <div class="mt-3">
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Python</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>AutoCAD</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Microsoft Excel</span>
-                            <span class="badge bg-light text-dark border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Adobe Photoshop</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Python</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>AutoCAD</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Microsoft Excel</span>
+                            <span class="badge bg-body-tertiary text-body border me-1 mb-1 px-2 py-1"><i class="fas fa-check-circle text-success me-1"></i>Adobe Photoshop</span>
                         </div>
                     </div>
                 </div>
@@ -277,10 +288,11 @@
 </style>
 
 <!-- PROJECTS -->
-<section id="projects" class="py-5 bg-white">
+<section id="projects" class="py-5 bg-body">
     <div class="container">
 
-        <h2 class="text-center mb-5 fw-bold"><i class="fas fa-code text-secondary me-2"></i>PROJECTS</h2>
+       
+        <h2 class="text-center mb-5 fw-bold"><i class="fas fa-code text-primary me-2"></i>PROJECTS</h2>
 
         <div class="row g-4 justify-content-center">
             
@@ -288,10 +300,12 @@
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm project-card overflow-hidden">
                     <img src="images/smartagricultre.jpg" class="card-img-top" alt="Smart Agriculture" style="height: 300px; object-fit: cover;">
-                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
-                        <h5 class="card-title fw-bold mb-0">Smart Agriculture</h5>
+                    <!-- bg-light yerine bg-body-tertiary eklendi -->
+                    <div class="card-body d-flex justify-content-between align-items-center bg-body-tertiary">
+                        <h5 class="card-title fw-bold text-body mb-0">Smart Agriculture</h5>
                         
-                        <button class="btn txt-white rounded-circle shadow-sm" style="background-color: #8ad889; border: none;"data-bs-toggle="modal" data-bs-target="#modalProject1" title="Show Details">
+                        <!-- txt-white yazım yanlışı text-white olarak düzeltildi -->
+                        <button class="btn text-white rounded-circle shadow-sm" style="background-color: #8ad889; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject1" title="Show Details">
                             <i class="fas fa-search-plus"></i>
                         </button>
                     </div>
@@ -302,9 +316,9 @@
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm project-card overflow-hidden">
                     <img src="images/mysqlmongdb.jpg" class="card-img-top" alt="Database Benchmark" style="height: 300px; object-fit: cover;">
-                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
-                        <h5 class="card-title fw-bold mb-0">DB Performance Benchmarking</h5>
-                        <button class="btn txt-white rounded-circle shadow-sm" style="background-color: #ec8684; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject2">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-body-tertiary">
+                        <h5 class="card-title fw-bold text-body mb-0">DB Performance Benchmarking</h5>
+                        <button class="btn text-white rounded-circle shadow-sm" style="background-color: #ec8684; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject2">
                             <i class="fas fa-search-plus"></i>
                         </button>
                     </div>
@@ -315,9 +329,9 @@
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm project-card overflow-hidden">
                     <img src="images/sakarya.jpg" class="card-img-top" alt="POSIX Systems" style="height: 300px; object-fit: cover;">
-                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
-                        <h5 class="card-title fw-bold mb-0">Introducing Home Town</h5>
-                        <button class="btn txt-white rounded-circle shadow-sm" style="background-color: #84c2f6; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject3">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-body-tertiary">
+                        <h5 class="card-title fw-bold text-body mb-0">Introducing Home Town</h5>
+                        <button class="btn text-white rounded-circle shadow-sm" style="background-color: #84c2f6; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject3">
                             <i class="fas fa-search-plus"></i>
                         </button>
                     </div>
@@ -328,9 +342,9 @@
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm project-card overflow-hidden">
                     <img src="images/librarye.jpg" class="card-img-top" alt="Network Config" style="height: 300px; object-fit: cover;">
-                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
-                        <h5 class="card-title fw-bold mb-0">Library Management System</h5>
-                        <button class="btn txt-white rounded-circle shadow-sm" style="background-color: #49cef3; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject4">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-body-tertiary">
+                        <h5 class="card-title fw-bold text-body mb-0">Library Management System</h5>
+                        <button class="btn text-white rounded-circle shadow-sm" style="background-color: #49cef3; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject4">
                             <i class="fas fa-search-plus"></i>
                         </button>
                     </div>
@@ -340,12 +354,10 @@
               <!-- Proje 5 -->
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm project-card overflow-hidden">
-                    <!-- Proje Görseli (Buraya kendi görsel linklerini ekleyebilirsin) -->
                     <img src="images/bigdata.jpg" class="card-img-top" alt="Big Data Analytics" style="height: 300px; object-fit: cover;">
-                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
-                        <h5 class="card-title fw-bold mb-0">Big Data Analytics</h5>
-                    
-                        <button class="btn txt-white rounded-circle shadow-sm" style="background-color: #4ebecd; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject5" title="Detayları Gör">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-body-tertiary">
+                        <h5 class="card-title fw-bold text-body mb-0">Big Data Analytics</h5>
+                        <button class="btn text-white rounded-circle shadow-sm" style="background-color: #4ebecd; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject5" title="Detayları Gör">
                             <i class="fas fa-search-plus"></i>
                         </button>
                     </div>
@@ -355,18 +367,15 @@
               <!-- Proje 6 -->
             <div class="col-md-6">
                 <div class="card border-0 shadow-sm project-card overflow-hidden">
-                    
                     <img src="images/kuaffor.jpg" class="card-img-top" alt="Hair Salon Management" style="height: 300px; object-fit: cover;">
-                    <div class="card-body d-flex justify-content-between align-items-center bg-light">
-                        <h5 class="card-title fw-bold mb-0">Hair Salon Management</h5>
-                    
-                        <button class="btn txt-white rounded-circle shadow-sm" style="background-color: #c953ba; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject6" title="Detayları Gör">
+                    <div class="card-body d-flex justify-content-between align-items-center bg-body-tertiary">
+                        <h5 class="card-title fw-bold text-body mb-0">Hair Salon Management</h5>
+                        <button class="btn text-white rounded-circle shadow-sm" style="background-color: #c953ba; border: none;" data-bs-toggle="modal" data-bs-target="#modalProject6" title="Detayları Gör">
                             <i class="fas fa-search-plus"></i>
                         </button>
                     </div>
                 </div>
             </div>
-
 
         </div>
     </div>
@@ -377,7 +386,7 @@
     transition: transform 0.4s ease;
 }
 .project-card:hover img {
-    transform: scale(1.05); /* Üzerine gelince resim hafifçe büyür */
+    transform: scale(1.05); 
 }
 .project-card {
     transition: box-shadow 0.3s ease;
@@ -388,26 +397,27 @@
 </style>
 
 
-
 <!-- KNOW BETTER-->
-<section id="knowbetter" class="py-5" style="background-color: #f8f9fa;">
+<section id="knowbetter" class="py-5 bg-body-tertiary">
     <div class="container">
         
-
         <h2 class="text-center mb-5 fw-bold"><i class="fas fa-user-astronaut text-white me-2" style="background-color: #c953ba; padding: 10px; border-radius: 50%;"></i>KNOW ME BETTER</h2>
-            <div class="row g-5 align-items-center">
+        <div class="row g-5 align-items-center">
             
             <!-- Left Column: Technical Skills and Work Environment -->
             <div class="col-lg-6">
-                <h4 class="fw-bold mb-4"><i class="fas fa-laptop-code text-secondary me-2"></i>Interests & Experiences</h4>
-                <p class="text-secondary mb-4">
+                <!-- Başlığa text-body eklendi -->
+                <h4 class="fw-bold mb-4 text-body"><i class="fas fa-laptop-code text-secondary me-2"></i>Interests & Experiences</h4>
+                <!-- text-secondary, text-body-secondary yapıldı -->
+                <p class="text-body-secondary mb-4">
                     In my development processes, I actively use macOS and Linux (VirtualBox) environments, leveraging the flexibility that different operating systems provide. 
                 </p>
 
                 <!-- Skills Bars -->
                 <div class="mb-3">
                     <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-bold text-dark">Backend Development & C & Java</span>
+                        <!-- text-dark, text-body yapıldı -->
+                        <span class="fw-bold text-body">Backend Development & C & Java</span>
                         <span class="text-muted"></span>
                     </div>
                     <div class="progress" style="height: 8px;">
@@ -415,9 +425,9 @@
                     </div>
                 </div>
                 
-                      <div class="mb-3">
+                <div class="mb-3">
                     <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-bold text-dark">Frontend Development & JavaScript</span>
+                        <span class="fw-bold text-body">Frontend Development & JavaScript</span>
                         <span class="text-muted"></span>
                     </div>
                     <div class="progress" style="height: 8px;">
@@ -427,7 +437,7 @@
 
                 <div class="mb-3">
                     <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-bold text-dark">Iot & Embedded Systems</span>
+                        <span class="fw-bold text-body">Iot & Embedded Systems</span>
                         <span class="text-muted"></span>
                     </div>
                     <div class="progress" style="height: 8px;">
@@ -437,20 +447,20 @@
 
                 <div class="mb-4">
                     <div class="d-flex justify-content-between mb-1">
-                        <span class="fw-bold text-dark">Python & AI & Data Science</span>
+                        <span class="fw-bold text-body">Python & AI & Data Science</span>
                         <span class="text-muted"></span>
                     </div>
                     <div class="progress" style="height: 8px;">
                         <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
-
                 
+                <!-- Alt etiketler uyumlu hale getirildi -->
                 <div class="mt-4">
-                    <span class="badge bg-white text-dark border shadow-sm px-3 py-2 me-2 mb-2"><i class="fab fa-apple me-1"></i>macOS</span>
-                    <span class="badge bg-white text-dark border shadow-sm px-3 py-2 me-2 mb-2"><i class="fab fa-linux me-1"></i>Linux</span>
-                    <span class="badge bg-white text-dark border shadow-sm px-3 py-2 me-2 mb-2"><i class="fas fa-server me-1"></i>Docker</span>
-                    <span class="badge bg-white text-dark border shadow-sm px-3 py-2 me-2 mb-2"><i class="fas fa-mobile-alt me-1"></i>Flutter</span>
+                    <span class="badge bg-body text-body border border-secondary-subtle shadow-sm px-3 py-2 me-2 mb-2"><i class="fab fa-apple me-1"></i>macOS</span>
+                    <span class="badge bg-body text-body border border-secondary-subtle shadow-sm px-3 py-2 me-2 mb-2"><i class="fab fa-linux me-1"></i>Linux</span>
+                    <span class="badge bg-body text-body border border-secondary-subtle shadow-sm px-3 py-2 me-2 mb-2"><i class="fas fa-server me-1"></i>Docker</span>
+                    <span class="badge bg-body text-body border border-secondary-subtle shadow-sm px-3 py-2 me-2 mb-2"><i class="fas fa-mobile-alt me-1"></i>Flutter</span>
                 </div>
             </div>
 
@@ -458,37 +468,37 @@
             <div class="col-lg-6">
                 <div class="row g-4">
                     
-                    <!--  -->
+                    <!-- Hobi 1 -->
                     <div class="col-md-6">
-                        <div class="card hobi-card border-0 shadow-sm text-center p-4 h-100 bg-white rounded-4">
-                            <div class="icon-circle bg-light text-primary mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 24px;">
+                        <div class="card hobi-card border-0 shadow-sm text-center p-4 h-100 bg-body rounded-4">
+                            <div class="icon-circle bg-body-tertiary text-primary mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 24px;">
                                 <i class="fas fa-route"></i>
                             </div>
-                            <h5 class="fw-bold">Travelling & Exploration</h5>
-                            <p class="text-secondary small mb-0">I really enjoy exploring new places and discovering hidden gems around the Turkiye.</p>
+                            <h5 class="fw-bold text-body">Travelling & Exploration</h5>
+                            <p class="text-body-secondary small mb-0">I really enjoy exploring new places and discovering hidden gems around the Turkiye.</p>
                         </div>
                     </div>
 
-                    <!--  -->
+                    <!-- Hobi 2 -->
                     <div class="col-md-6">
-                        <div class="card hobi-card border-0 shadow-sm text-center p-4 h-100 bg-white rounded-4">
-                            <div class="icon-circle bg-light text-success mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 24px;">
+                        <div class="card hobi-card border-0 shadow-sm text-center p-4 h-100 bg-body rounded-4">
+                            <div class="icon-circle bg-body-tertiary text-success mx-auto mb-3" style="width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 24px;">
                                 <i class="fas fa-microchip"></i>
                             </div>
-                            <h5 class="fw-bold">DIY Hardware</h5>
-                            <p class="text-secondary small mb-0">I enjoy disassembling and assembling hardware, building my own circuits, and exploring the physical aspects of systems.</p>
+                            <h5 class="fw-bold text-body">DIY Hardware</h5>
+                            <p class="text-body-secondary small mb-0">I enjoy disassembling and assembling hardware, building my own circuits, and exploring the physical aspects of systems.</p>
                         </div>
                     </div>
 
-                    <!--  -->
+                    <!-- Hobi 3 -->
                     <div class="col-md-12">
-                        <div class="card hobi-card border-0 shadow-sm p-4 bg-white rounded-4 d-flex flex-row align-items-center">
-                            <div class="icon-circle bg-light text-info me-4" style="width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 24px; text-align: center; flex-shrink: 0;">
+                        <div class="card hobi-card border-0 shadow-sm p-4 bg-body rounded-4 d-flex flex-row align-items-center">
+                            <div class="icon-circle bg-body-tertiary text-info me-4" style="width: 60px; height: 60px; line-height: 60px; border-radius: 50%; font-size: 24px; text-align: center; flex-shrink: 0;">
                                 <i class="fas fa-book"></i>
                             </div>
                             <div>
-                                <h5 class="fw-bold mb-1">Documentation</h5>
-                                <p class="text-secondary small mb-0">When documenting the places I visit and my hardware projects, I place great importance on aesthetic details, and I love capturing frames that blend technology with nature.</p>
+                                <h5 class="fw-bold text-body mb-1">Documentation</h5>
+                                <p class="text-body-secondary small mb-0">When documenting the places I visit and my hardware projects, I place great importance on aesthetic details, and I love capturing frames that blend technology with nature.</p>
                             </div>
                         </div>
                     </div>
@@ -500,27 +510,10 @@
     </div>
 </section>
 
-<style>
-.hobi-card {
-    transition: all 0.3s ease-in-out;
-}
-.hobi-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1) !important;
-}
-/* İkonların üzerine gelince arka plan rengi değişimi */
-.hobi-card:hover .icon-circle {
-    background-color: #0d6efd !important;
-    color: #fff !important;
-    transition: all 0.3s ease;
-}
-
-</style>
-
 
 
 <!-- CONTACT-->
-<section id="contact" class="py-5 bg-white">
+<section id="contact" class="py-5 bg-body">
     <div class="container">
     
         <h2 class="text-center mb-5 fw-bold"><i class="fas fa-envelope-open-text text-white me-2" style="background-color: #49caf5; padding: 10px; border-radius: 50%;"></i>CONTACT ME</h2>
@@ -532,34 +525,35 @@
                 <div class="d-flex flex-column gap-4">
                     <!-- Location-->
                     <div class="d-flex align-items-center">
-                        <div class="icon-circle bg-light text-primary me-3 d-flex justify-content-center align-items-center shadow-sm" style="width: 50px; height: 50px; border-radius: 50%; font-size: 20px;">
+                        <div class="icon-circle bg-body-tertiary text-primary me-3 d-flex justify-content-center align-items-center shadow-sm" style="width: 50px; height: 50px; border-radius: 50%; font-size: 20px;">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div>
-                            <h5 class="fw-bold mb-0">Location</h5>
-                            <p class="text-secondary mb-0">Sakarya, Türkiye</p>
+                            
+                            <h5 class="fw-bold text-body mb-0">Location</h5>
+                            <p class="text-body-secondary mb-0">Sakarya, Türkiye</p>
                         </div>
                     </div>
 
                     <!-- E-mail -->
                     <div class="d-flex align-items-center">
-                        <div class="icon-circle bg-light text-success me-3 d-flex justify-content-center align-items-center shadow-sm" style="width: 50px; height: 50px; border-radius: 50%; font-size: 20px;">
+                        <div class="icon-circle bg-body-tertiary text-success me-3 d-flex justify-content-center align-items-center shadow-sm" style="width: 50px; height: 50px; border-radius: 50%; font-size: 20px;">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div>
-                            <h5 class="fw-bold mb-0">Email</h5>
-                            <p class="text-secondary mb-0">rabis.varol54@gmail.com</p>
+                            <h5 class="fw-bold text-body mb-0">Email</h5>
+                            <p class="text-body-secondary mb-0">rabis.varol54@gmail.com</p>
                         </div>
                     </div>
 
                     <!-- LinkedIn -->
                     <div class="d-flex align-items-center">
-                        <div class="icon-circle bg-light text-info me-3 d-flex justify-content-center align-items-center shadow-sm" style="width: 50px; height: 50px; border-radius: 50%; font-size: 20px;">
+                        <div class="icon-circle bg-body-tertiary text-info me-3 d-flex justify-content-center align-items-center shadow-sm" style="width: 50px; height: 50px; border-radius: 50%; font-size: 20px;">
                             <i class="fab fa-linkedin-in"></i>
                         </div>
                         <div>
-                            <h5 class="fw-bold mb-0">LinkedIn</h5>
-                            <a href="#" class="text-secondary text-decoration-none">linkedin.com/in/rabia varol</a>
+                            <h5 class="fw-bold text-body mb-0">LinkedIn</h5>
+                            <p class="text-body-secondary mb-0">Rabia Varol</p>
                         </div>
                     </div>
                 </div>
@@ -567,53 +561,49 @@
 
             <!-- Right Column: Contact Form -->
             <div class="col-lg-6">
-                <div class="card border-0 shadow p-4 rounded-4">
+                
+                <div class="card border-0 shadow p-4 rounded-4 bg-body-tertiary">
                     
-                    <form action="https://api.web3forms.com/submit"method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST">
                         
                         <!-- Name Surname-->
                         <div class="mb-3">
-                            <label for="name" class="form-label fw-bold text-secondary">Name</label>
+                            <label for="name" class="form-label fw-bold text-body-secondary">Name</label>
                             <div class="input-group">
-                                <span class="input-group-text bg-light border-end-0"><i class="fas fa-user text-muted"></i></span>
-                                <input type="text" class="form-control border-start-0 bg-light" name="name" id="name" placeholder="Your Name and Surname" required>
+                                
+                                <span class="input-group-text bg-body border-end-0"><i class="fas fa-user text-body-secondary"></i></span>
+                                <input type="text" class="form-control border-start-0 bg-body" name="name" id="name" placeholder="Your Name and Surname" required>
                             </div>
                         </div>
 
                         <!-- Mail Address -->
                         <div class="mb-3">
-                            <label for="email" class="form-label fw-bold text-secondary">Email</label>
+                            <label for="email" class="form-label fw-bold text-body-secondary">Email</label>
                             <div class="input-group">
-                                <span class="input-group-text bg-light border-end-0"><i class="fas fa-at text-muted"></i></span>
-                                <input type="email" class="form-control border-start-0 bg-light" name="email" id="email" placeholder="your.email@example.com" required>
+                                <span class="input-group-text bg-body border-end-0"><i class="fas fa-at text-body-secondary"></i></span>
+                                <input type="email" class="form-control border-start-0 bg-body" name="email" id="email" placeholder="your.email@example.com" required>
                             </div>
                         </div>
 
                         <!-- Subject -->
                         <div class="mb-3">
-                            <label for="subject" class="form-label fw-bold text-secondary">Subject</label>
+                            <label for="subject" class="form-label fw-bold text-body-secondary">Subject</label>
                             <div class="input-group">
-                                <span class="input-group-text bg-light border-end-0"><i class="fas fa-tag text-muted"></i></span>
-                                <input type="text" class="form-control border-start-0 bg-light" name="subject" id="subject" placeholder="What is your message about?" required>
+                                <span class="input-group-text bg-body border-end-0"><i class="fas fa-tag text-body-secondary"></i></span>
+                                <input type="text" class="form-control border-start-0 bg-body" name="subject" id="subject" placeholder="What is your message about?" required>
                             </div>
                         </div>
 
                         <!-- Your Message -->
                         <div class="mb-4">
-                            <label for="message" class="form-label fw-bold text-secondary">Your Message</label>
-                            <textarea class="form-control bg-light" name="message" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+                            <label for="message" class="form-label fw-bold text-body-secondary">Your Message</label>
+                            <textarea class="form-control bg-body" name="message" id="message" rows="4" placeholder="Type your message here..." required></textarea>
                         </div>
 
-                       
-    <input type="hidden" name="access_key" value="170be192-aa2a-4994-842c-6dee17db211e">
-
-    
-    <input type="hidden" name="redirect" value="https://rabiav15.github.io/portfolio/#home">
-
-    
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                       
-    
+                        <input type="hidden" name="access_key" value="170be192-aa2a-4994-842c-6dee17db211e">
+                        <input type="hidden" name="redirect" value="https://rabiav15.github.io/portfolio/#home">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
                         <!-- Send Button -->
                         <button type="submit" class="btn btn-primary w-100 py-2 fw-bold text-uppercase shadow-sm" style="letter-spacing: 1px;">
                             <i class="fas fa-paper-plane me-2"></i> Send Message
@@ -751,9 +741,9 @@
         <div class="container">
             <div class="mb-3">
                 <!-- Sosyal Medya İkonları -->
-                <a href="#" class="text-white me-3 fs-4"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-white me-3 fs-4"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/rabiav15" class="text-white me-3 fs-4"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rabiavarol15/" class="text-white me-3 fs-4"><i class="fab fa-linkedin"></i></a>
+                
             </div>
         </div>
     </footer>
@@ -761,5 +751,40 @@
 
     <!-- Bootstrap 5 JS ve Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Dark/Light Mode JavaScript -->
+<script>
+    const themeToggleBtn = document.getElementById('darkModeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const htmlElement = document.documentElement;
+
+    // Sayfa yüklendiğinde kullanıcının eski seçimini kontrol et
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-bs-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    // Butona tıklandığında temayı değiştir
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-bs-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        htmlElement.setAttribute('data-bs-theme', newTheme);
+        localStorage.setItem('theme', newTheme); // Seçimi hafızaya kaydet
+        updateIcon(newTheme);
+    });
+
+    // İkonu temaya göre güncelle (Ay veya Güneş)
+    function updateIcon(theme) {
+        if (theme === 'dark') {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+            themeToggleBtn.classList.replace('btn-outline-light', 'btn-outline-warning'); // Güneş için sarımsı çerçeve
+        } else {
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+            themeToggleBtn.classList.replace('btn-outline-warning', 'btn-outline-light');
+        }
+    }
+</script>
+
 </body>
 </html>
